@@ -21,10 +21,6 @@ document.querySelector("#pause").addEventListener("click", function() {
 
 	video.pause();
 	console.log("Pause Video");
-
-	slider.addEventListener('input', function() {
-		video.volume = slider.value / 100;
-	});
 });
 
 
@@ -50,7 +46,6 @@ document.querySelector("#skip").addEventListener("click", function() {
 video.addEventListener('ended', function(){
 	// Reset the video to 0
 	video.currentTime = 0;
-	// And play again
   });
 
 
