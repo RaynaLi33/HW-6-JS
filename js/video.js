@@ -13,10 +13,8 @@ document.querySelector("#play").addEventListener("click", function() {
     video.play();
 	console.log("Play Video");
 
-	slider.addEventListener('input', function() {
-		video.volume = video.value / 100;
-	});
-
+	video.volume = prev_volume;
+	
 });
 	
 
