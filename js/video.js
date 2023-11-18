@@ -10,11 +10,9 @@ window.addEventListener("load", function() {
 
 document.querySelector("#play").addEventListener("click", function() {
 
-    video.play();
+	video.play();
 	console.log("Play Video");
-
-	video.volume = prev_volume;
-	
+	updateVolume();
 });
 	
 
@@ -97,7 +95,7 @@ function updateVolume() {
 
 
 slider.addEventListener('input', updateVolume);
-updateVolume();
+
 
 slider.addEventListener('input', function() {
 	video.volume = slider.value / 100;
